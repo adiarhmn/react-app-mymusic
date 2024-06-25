@@ -22,7 +22,6 @@ export const useSpotifyAuth = () => {
   return useMutation({
     mutationFn: SpotifyAuth,
     onSuccess: (data) => {
-      console.log(data);
       localStorage.setItem('spotify_token', data);
     },
   });
